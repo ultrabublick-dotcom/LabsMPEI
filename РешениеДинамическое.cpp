@@ -11,6 +11,7 @@ typedef int (*StringOutput_t)(const char*, const char*);
 int main(int argc, char* argv[])
 {
     char* Input = nullptr, * Words = nullptr, * Output = nullptr;
+    HMODULE hDll;
 
     SetConsoleOutputCP(CP_UTF8);
 
@@ -20,7 +21,8 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    HMODULE hDll = LoadLibraryW(L"StringLib.dll");
+    hDll = LoadLibrary(TEXT("DLL1.dll"));
+    
     if (hDll == nullptr) 
     {
         cout << "Проблемы с открытием модуля" << endl;
