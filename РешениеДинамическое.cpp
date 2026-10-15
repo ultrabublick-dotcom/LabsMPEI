@@ -3,8 +3,6 @@
 
 using namespace std;
 
-typedef int (*IsElementLetter_t)(char);
-typedef int (*LenghOfWord_t)(const char*);
 typedef int (*WordMaking_t)(const char*, char*);
 typedef int (*DeleteRepeatingLetter_t)(const char*, char*);
 typedef int (*StringInput_t)(char*, const char*);
