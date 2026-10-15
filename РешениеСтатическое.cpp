@@ -14,7 +14,7 @@
 На языке С++ написать программу, статически подключающую разработанную библиотеку, и программу, динамически подключающую разработанную библиотеку.
 */
 
-#include "C:\Users\Admin\source\repos\Dll1\StringLib.h"
+#include "..\Dll1\StringLib.h"
 #include <iostream>
 #include <Windows.h>
 
